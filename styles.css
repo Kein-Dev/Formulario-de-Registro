@@ -1,0 +1,120 @@
+body {
+    background-color: #3b3b98;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #6a5acd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+label.floating-label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 13px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transform: translateY(-50%);
+}
+
+input:focus + .floating-label,
+textarea:focus + .floating-label,
+input:not(:placeholder-shown) + .floating-label,
+textarea:not(:placeholder-shown) + .floating-label {
+    top: -13px;
+    left: 10px;
+    font-size: 10px;
+    color: #333;
+    transform: translateY(0);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: transparent;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #999;
+    transition: color 0.2s ease;
+}
+
+.gender-label {
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4b4b8a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b3b98;
+}
+
+.btn-registrar {
+    background-color: #ff4b4b;
+}
+
+.btn-registrar:hover {
+    background-color: #e03b3b;
+}

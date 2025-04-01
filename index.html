@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,72 @@
     <h1>¡Regístrate y únete a la comunidad!</h1>
     <form action="#" method="post">
         <!-- Nombre -->
+        <div class="form-group">
+            <input type="text" id="nombre" name="nombre" required aria-label="Nombre" placeholder="Tu nombre">
+            <label for="nombre" class="floating-label">Nombre</label>
+        </div>
         <!-- Apellido -->
+        <div class="form-group">
+            <input type="text" id="apellido" name="apellido" required aria-label="Apellido" placeholder="Tu apellido">
+            <label for="apellido" class="floating-label">Apellido</label>
+        </div>
         <!-- Correo Electrónico -->
+        <div class="form-group">
+            <input type="email" id="email" name="email" required aria-label="Correo Electrónico" placeholder="Tu correo electrónico">
+            <label for="email" class="floating-label">Correo Electrónico</label>
+        </div>
         <!-- Contraseña -->
+        <div class="form-group">
+            <input type="password" id="password" name="password" required aria-label="Contraseña" placeholder="Tu contraseña">
+            <label for="password" class="floating-label">Contraseña</label>
+        </div>
         <!-- Confirmar Contraseña -->
+        <div class="form-group">
+            <input type="password" id="confirm_password" name="confirm_password" required aria-label="Confirmar Contraseña" placeholder="Confirma tu contraseña">
+            <label for="confirm_password" class="floating-label">Confirmar Contraseña</label>
+        </div>
         <!-- Fecha de Nacimiento -->
+        <div class="form-group">
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required aria-label="Fecha de Nacimiento">
+            <label for="fecha_nacimiento" class="floating-label">Fecha de Nacimiento</label>
+        </div>
         <!-- Género -->
-        <
-        <!-- Botón de Envío -->
+        <div class="form-group">
+            <label for="genero" class="gender-label">Género</label>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="genero" value="masculino" required aria-label="Género Masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" required aria-label="Género Femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="otro" required aria-label="otro">
+                <label for="otro">Otro</label>
+            </div>
+        </div>
+        <!-- Descripción -->
+        <div class="form-group">
+            <label for="descripcion" class="floating-label">Descripción</label>
+            <textarea id="descripcion" name="descripcion" required aria-label="Descripción" placeholder="Cuéntanos un poco sobre ti"></textarea>
+        </div>
+        <!-- Intereses -->
+        <div>
+            <label for="Intereses">Selecciona tus intereses</label>
+            <select id ="intereses" name="intereses" required aria-label="Intereses">
+                <option value="tecnologia">Tecnología</option>
+                <option value="viajes">Viajes</option>
+                <option value="cine">Cine</option>
+                <option value="musica">Música</option>
+                <option value="deportes">Deportes</option>
+            </select>
+        </div>
+        <!-- Aceptar Términos y Condiciones -->
+        <div class="form-group">
+            <input type="checkbox" id="terminos" name="terminos" required aria-label="Aceptar términos y condiciones">
+            <label for="terminos">Acepto los <a href="#">términos y condiciones</a></label>
+        </div>
+        <!-- Botón de Registro -->
+        <div class="form-group">
+            <button type="submit" class="btn-registrar">Registrar</button>
+        </div>
     </form>
 </div>
 </body>
